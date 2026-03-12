@@ -1,34 +1,44 @@
 # AI Chatbot Testing Framework
 
-This repository is a starter QA portfolio project focused on testing AI chatbot behavior.
+This repository is a QA portfolio project designed to demonstrate how AI chatbot systems can be tested for quality, safety, and reliability.
 
-## Purpose
-The goal of this project is to demonstrate how AI systems can be tested for quality, safety, and reliability using a structured QA approach.
+## Project Objective
+The purpose of this project is to show a structured testing approach for AI chatbot behavior using Python-based test cases and organized QA assets.
 
-## Test Coverage
-- Accuracy testing
-- Prompt injection testing
-- Dataset-driven test design
-- Mock chatbot response validation
+## Current Test Coverage
+- Accuracy validation
+- Prompt injection resistance
+- Hallucination prevention
+- Dataset-driven test inputs
 
 ## Project Structure
-- `app/` - chatbot logic
+- `app/` - mock chatbot logic
 - `tests/` - automated test cases
-- `data/` - test prompts and expected answers
-- `docs/` - testing strategy and documentation
+- `data/` - prompt dataset and expected answers
+- `docs/` - testing strategy documentation
+- `requirements.txt` - project dependency list
 
-## Current Files
-- `app/main.py`
+## Test Files
 - `tests/test_accuracy.py`
 - `tests/test_prompt_injection.py`
-- `data/test_prompts.csv`
-- `docs/test-strategy.md`
+- `tests/test_hallucination.py`
 
-## Future Scope
-- Add hallucination scoring
-- Connect to real LLM APIs
-- Generate automated test reports
-- Add GitHub Actions for CI/CD
+## Sample Risk Areas Covered
+### Accuracy
+Verifies that the chatbot returns correct answers for known prompts.
+
+### Prompt Injection
+Checks whether the chatbot safely handles malicious or instruction-bypass prompts.
+
+### Hallucination Prevention
+Validates that the chatbot does not fabricate answers for unknown questions.
+
+## Future Enhancements
+- Add consistency testing
+- Add API-based LLM testing
+- Generate automated reports
+- Add GitHub Actions CI pipeline
+- Expand dataset-driven validation
 
 ## Why This Project Matters
-AI applications need QA coverage beyond normal software testing. This framework shows how chatbot responses can be validated for correctness, safety, and resilience.
+AI systems require more than traditional software testing. They must also be evaluated for truthfulness, safety, robustness, and responsible behavior. This project demonstrates foundational QA practices for AI application testing.
